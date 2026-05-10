@@ -62,7 +62,6 @@ public class RateLimitFilter implements Filter {
             // Graceful degradation: allow request if Redis fails; fallback to no rate limiting
             logger.warning("Redis rate limit failed: " + e.getMessage());
         }
-
         chain.doFilter(req, res);
     }
 

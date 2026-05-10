@@ -104,11 +104,7 @@ public class UserDao {
         return users;
     }
 
-    /**
-     * Creates new user with hashed password and USER role
-     * Returns false if username already exists (handled by unique constraint)
-     * @throws RuntimeException if database error occurs
-     */
+
     public static boolean create(String username, String password) {
         if (username == null || password == null) {
             return false;
@@ -149,7 +145,6 @@ public class UserDao {
                      "DELETE FROM users WHERE TRIM(username)=? AND UPPER(role) <> 'ADMIN'")) {
 
             ps.setString(1, username.trim());
-
             return ps.executeUpdate() > 0;
 
         } catch (Exception e) {

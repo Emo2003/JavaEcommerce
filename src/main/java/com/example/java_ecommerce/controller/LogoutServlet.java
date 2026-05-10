@@ -15,7 +15,6 @@ public class LogoutServlet extends HttpServlet {
         Cookie cookie = new Cookie("token", "");
         cookie.setMaxAge(0);
         cookie.setPath("/");
-
         resp.addCookie(cookie);
 
         // Invalidate session to clear server-side session data

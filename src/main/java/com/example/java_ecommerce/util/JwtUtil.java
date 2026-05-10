@@ -36,7 +36,6 @@ public class JwtUtil {
             DecodedJWT jwt = JWT.require(algorithm)
                     .build()
                     .verify(token);
-
             return jwt.getClaim("user").asString();
 
         } catch (JWTVerificationException e) {

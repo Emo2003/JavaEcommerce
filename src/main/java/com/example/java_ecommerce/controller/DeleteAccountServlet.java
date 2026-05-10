@@ -39,7 +39,6 @@ public class DeleteAccountServlet extends HttpServlet {
             }
 
             logger.info("Account deleted: " + user.getUsername());
-
             resp.sendRedirect(req.getContextPath() + "/login.jsp");
 
         } catch (IllegalArgumentException | SecurityException e) {

@@ -3,7 +3,6 @@
 <html>
 <head>
     <title>Something went wrong</title>
-
     <style>
         body {
             margin: 0;

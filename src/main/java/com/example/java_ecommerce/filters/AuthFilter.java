@@ -87,7 +87,6 @@ public class AuthFilter implements Filter {
         request.setAttribute("user", user);
         request.setAttribute("username", user.getUsername());
         request.setAttribute("role", user.getRole());
-
         chain.doFilter(req, res);
     }
 

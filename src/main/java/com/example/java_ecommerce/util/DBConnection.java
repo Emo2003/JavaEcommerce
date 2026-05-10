@@ -25,7 +25,6 @@ public class DBConnection {
                     DB_USER,
                     DB_PASS
             );
-
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

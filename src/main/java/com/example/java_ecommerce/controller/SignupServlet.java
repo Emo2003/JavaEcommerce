@@ -23,7 +23,6 @@ public class SignupServlet extends HttpServlet {
 
             // Validate input and create new user with hashed password
             authService.signup(username, password);
-
             logger.info("New user signed up: " + username);
 
             // Redirect to login after successful registration for authentication

@@ -9,7 +9,6 @@
     :root { --primary: #4f46e5; --primary-dark: #4338ca; --slate: #1e293b; --text-light: #64748b; }
     * { box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
     body { margin: 0; background: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
-
     .container {
       display: flex; width: 900px; height: 550px; background: white;
       border-radius: 24px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); overflow: hidden;

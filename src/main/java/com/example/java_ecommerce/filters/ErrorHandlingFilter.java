@@ -18,7 +18,6 @@ public class ErrorHandlingFilter implements Filter {
 
         try {
             chain.doFilter(req, res);
-
         } catch (IllegalArgumentException | SecurityException e) {
             // Handle validation and authorization errors with user-friendly messages
             req.setAttribute("error", e.getMessage());

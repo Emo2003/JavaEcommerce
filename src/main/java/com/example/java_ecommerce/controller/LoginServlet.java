@@ -42,7 +42,6 @@ public class LoginServlet extends HttpServlet {
             session.setAttribute("role", user.getRole());
 
             logger.info("User logged in: " + user.getUsername());
-
             resp.sendRedirect(req.getContextPath() + "/ProductsMain");
 
         } catch (IllegalArgumentException e) {

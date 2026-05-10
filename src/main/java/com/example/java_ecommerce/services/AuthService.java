@@ -13,7 +13,6 @@ public class AuthService {
      */
     public User login(String username, String password) {
         validateCredentials(username, password);
-
         User user = UserDao.findByUsernameAndPassword(username.trim(), password.trim());
 
         if (user == null) {

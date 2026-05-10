@@ -29,7 +29,6 @@ public class PasswordUtil {
             throw new RuntimeException(e);
         }
     }
-
     /**
      * Compares raw password against stored hash; supports legacy plaintext passwords during migration
      */

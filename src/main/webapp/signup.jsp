@@ -6,7 +6,6 @@
   <title>Join MyShop</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    /* Shared Styles with Login */
     :root { --primary: #7c3aed; --primary-dark: #6d28d9; --slate: #1e293b; --text-light: #64748b; }
     * { box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
     body { margin: 0; background: #f8fafc; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
