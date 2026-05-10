@@ -1,0 +1,18 @@
+services:
+
+  mysql:
+    image: mysql:8
+    container_name: ecommerce-mysql
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: ecommerce
+
+    ports:
+      - "3307:3306"
+
+  redis:
+    image: redis:latest
+    container_name: ecommerce-redis
+    ports:
+      - "6379:6379"
