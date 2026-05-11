@@ -1,7 +1,8 @@
-package com.radi.demo7.util;
+package com.example.java_ecommerce.util;
 
-import com.radi.demo7.models.CartItem;
 
+
+import com.example.java_ecommerce.models.CartItem;
 import jakarta.servlet.http.HttpSession;
 import java.util.ArrayList;
 import java.util.List;

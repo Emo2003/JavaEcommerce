@@ -1,7 +1,8 @@
-package com.radi.demo7.dao;
+package com.example.java_ecommerce.dao;
 
-import com.radi.demo7.models.Order;
-import com.radi.demo7.util.DBConnection;
+
+import com.example.java_ecommerce.models.Order;
+import com.example.java_ecommerce.util.DBConnection;
 
 import java.sql.*;
 import java.util.ArrayList;

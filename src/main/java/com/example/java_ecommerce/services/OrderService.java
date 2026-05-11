@@ -1,8 +1,10 @@
-package com.radi.demo7.services;
+package com.example.java_ecommerce.services;
 
-import com.radi.demo7.dao.OrderDao;
-import com.radi.demo7.models.Order;
-import com.radi.demo7.models.User;
+
+
+import com.example.java_ecommerce.dao.OrderDao;
+import com.example.java_ecommerce.models.Order;
+import com.example.java_ecommerce.models.User;
 
 import java.util.List;
 

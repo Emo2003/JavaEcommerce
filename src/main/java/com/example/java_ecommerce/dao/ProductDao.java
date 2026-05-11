@@ -1,10 +1,10 @@
 package com.example.java_ecommerce.dao;
 
+import com.example.java_ecommerce.models.Product;
+import com.example.java_ecommerce.util.DBConnection;
+import com.example.java_ecommerce.util.RedisUtil;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.radi.demo7.models.Product;
-import com.radi.demo7.util.DBConnection;
-import com.radi.demo7.util.RedisUtil;
 import redis.clients.jedis.Jedis;
 
 import java.sql.*;

@@ -1,7 +1,9 @@
 package com.example.java_ecommerce.services;
 
-import com.radi.demo7.dao.ReviewDao;
-import com.radi.demo7.models.Review;
+
+
+import com.example.java_ecommerce.dao.ReviewDao;
+import com.example.java_ecommerce.models.Review;
 
 import java.util.List;
 

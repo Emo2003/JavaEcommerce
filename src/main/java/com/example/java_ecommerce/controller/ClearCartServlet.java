@@ -1,4 +1,4 @@
-package com.radi.demo7.controller;
+package com.example.java_ecommerce.controller;
 
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;

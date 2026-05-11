@@ -58,19 +58,35 @@ src/main/webapp/
 
 ### Local run
 
-1. Start MySQL and Redis.
+1. Start the full stack with Docker.
    ```powershell
    docker compose up -d
    ```
 
-2. Create the database schema in MySQL.
+2. The app container connects to MySQL using `DB_HOST=mysql` and `DB_PORT=3306`.
 
-3. Update connection settings in the utility classes used by the app, especially `DBConnection`, `RedisUtil`, and `JwtUtil`.
+3. If you run the app outside Docker, use the exposed host port instead:
+   - `DB_HOST=localhost`
+   - `DB_PORT=3307`
 
-4. Build the WAR.
+4. Redis follows the same rule:
+   - inside Docker: `REDIS_HOST=redis`, `REDIS_PORT=6379`
+   - outside Docker: `REDIS_HOST=localhost`, `REDIS_PORT=6379`
+
+5. The database schema is created automatically from `docker/mysql/init/01-schema.sql` on first start.
+
+6. Build the WAR only if you want to run the app outside Docker.
    ```powershell
    mvn clean package
    ```
 
-5. Deploy `target/demo7-1.0-SNAPSHOT.war` to Tomcat and start the server.
+7. Deploy `target/demo7-1.0-SNAPSHOT.war` to Tomcat if you are not using the Docker app container.
+
+### Docker notes
+
+- MySQL is exposed on host port `3307` to avoid conflicts with local MySQL installs.
+- Redis is exposed on host port `6379`.
+- The MySQL container uses a persistent volume, so data survives restarts.
+- The schema bootstrap creates starter `admin` credentials with password `admin123` for local testing.
+- The app container talks to the same MySQL database through the service name `mysql`; your host can still reach that same database through `localhost:3307`.
 

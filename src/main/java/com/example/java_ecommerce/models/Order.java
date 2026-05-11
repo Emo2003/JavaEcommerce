@@ -1,4 +1,4 @@
-package com.radi.demo7.models;
+package com.example.java_ecommerce.models;
 
 public class Order {
 

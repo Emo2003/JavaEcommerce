@@ -1,9 +1,8 @@
-package com.radi.demo7.controller;
+package com.example.java_ecommerce.controller;
 
-import com.radi.demo7.models.CartItem;
-import com.radi.demo7.models.Product;
-import com.radi.demo7.services.ProductService;
-import com.radi.demo7.util.CartUtil;
+import com.example.java_ecommerce.models.CartItem;
+import com.example.java_ecommerce.models.Product;
+import com.example.java_ecommerce.services.ProductService;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 
@@ -40,7 +39,7 @@ public class AddToCartServlet extends HttpServlet {
         }
 
         HttpSession session = request.getSession();
-        List<CartItem> cart = CartUtil.getCart(session);
+        List<com.example.java_ecommerce.models.CartItem> cart = com.example.java_ecommerce.util.CartUtil.getCart(session);
 
         boolean exists = false;
 

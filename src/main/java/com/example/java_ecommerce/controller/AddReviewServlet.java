@@ -1,6 +1,5 @@
 package com.example.java_ecommerce.controller;
-
-import com.radi.demo7.services.ReviewService;
+import com.example.java_ecommerce.services.ReviewService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;

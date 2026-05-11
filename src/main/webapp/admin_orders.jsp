@@ -98,8 +98,7 @@
       <td>${o.status}</td>
 
       <td>
-        <form action="update-order" method="post">
-
+        <form action="${pageContext.request.contextPath}/update-order" method="post">
           <input type="hidden" name="id" value="${o.id}"/>
 
           <button name="status" value="ACCEPTED" class="btn accept">

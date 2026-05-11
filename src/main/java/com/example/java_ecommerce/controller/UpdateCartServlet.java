@@ -1,7 +1,7 @@
-package com.radi.demo7.controller;
+package com.example.java_ecommerce.controller;
 
-import com.radi.demo7.models.CartItem;
-import com.radi.demo7.util.CartUtil;
+import com.example.java_ecommerce.models.CartItem;
+import com.example.java_ecommerce.util.CartUtil;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 

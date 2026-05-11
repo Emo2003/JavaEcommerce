@@ -1,7 +1,7 @@
-package com.radi.demo7.controller;
+package com.example.java_ecommerce.controller;
 
-import com.radi.demo7.models.User;
-import com.radi.demo7.services.OrderService;
+import com.example.java_ecommerce.models.User;
+import com.example.java_ecommerce.services.OrderService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
