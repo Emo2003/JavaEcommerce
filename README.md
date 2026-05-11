@@ -1,40 +1,40 @@
 
-# 🛒 E-Commerce Web Application
+#  E-Commerce Web Application
 
 A production-ready Java enterprise e-commerce platform built with **JSP/Servlet** technology, featuring **MySQL** persistence, **Redis** caching and rate limiting, **JWT-based authentication**, and a clean **layered architecture**. Designed for scalability, security, and maintainability.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### 👤 User Management
+###  User Management
 - User registration, login, logout, and account deletion
 - JWT-based stateless authentication with secure HTTP-only cookies
 - Role-based access control (Admin / Customer)
 
-### 🛍️ Product & Shopping
+###  Product & Shopping
 - Browse products with pagination and search
 - Detailed product view with specifications
 - Shopping cart: add, update quantity, remove items, and checkout
 
-### ⭐ Reviews System
+###  Reviews System
 - Authenticated users can submit product reviews
 - Delete own reviews
 - View aggregated ratings per product
 
-### 🛡️ Security & Middleware
+###  Security & Middleware
 - `AuthFilter`: Protects authenticated and admin-only routes
 - `RateLimitFilter`: Redis-backed request throttling (e.g., 100 req/min)
 - `ErrorHandlingFilter`: Centralized exception handling with user-friendly error pages
 
-### 👑 Admin Capabilities
+###  Admin Capabilities
 - Product management (create, edit, delete)
 - Order management and status updates
 - Admin-only dashboard access
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 The application follows **MVC** pattern with strict layer separation:
 
@@ -79,7 +79,7 @@ The application follows **MVC** pattern with strict layer separation:
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 src/main/java/com/example/java_ecommerce/
@@ -105,13 +105,13 @@ src/main/webapp/
 
 ---
 
-## 🐳 Quick Start with Docker
+##  Quick Start with Docker
 
 ### Prerequisites
 - Docker Desktop
 - (Optional) Maven for local WAR builds
 
-### 1️⃣ Start the full stack
+###  Start the full stack
 ```bash
 docker compose up -d
 ```
@@ -121,7 +121,7 @@ This launches:
 - **Redis** on port `6379`
 - **Tomcat 10** with the pre-built WAR
 
-### 4️⃣ Stop the environment
+###  Stop the environment
 ```bash
 docker compose down
 # Add -v to remove volumes (resets database)
@@ -129,7 +129,7 @@ docker compose down
 
 ---
 
-## 🛠️ Manual Setup (without Docker)
+##  Manual Setup (without Docker)
 
 ### Requirements
 - Java 17+ | Maven 3.8+ | Tomcat 10.1+ | MySQL 8 | Redis 7+
@@ -173,7 +173,7 @@ docker compose down
 
 ---
 
-## 🔐 Environment Configuration
+##  Environment Configuration
 
 | Variable      | Inside Docker | Outside Docker |
 |---------------|---------------|----------------|
@@ -182,11 +182,11 @@ docker compose down
 | `REDIS_HOST`  | `redis`       | `localhost`    |
 | `REDIS_PORT`  | `6379`        | `6379`         |
 
-> 💡 Docker Compose automatically injects the correct service names. For local development, override them in your IDE or Tomcat context.
+>  Docker Compose automatically injects the correct service names. For local development, override them in your IDE or Tomcat context.
 
 ---
 
-## 📦 Database Schema (auto-created)
+##  Database Schema (auto-created)
 
 The initial schema (`01-schema.sql`) creates:
 - `users` (id, email, password_hash, role)
@@ -195,7 +195,7 @@ The initial schema (`01-schema.sql`) creates:
 - `orders` & `order_items`
 - `reviews` (user_id, product_id, rating, comment)
 
-## 🌐 API Endpoints
+##  API Endpoints
 
 ### Auth
 POST   /login
@@ -219,7 +219,7 @@ POST   /order/checkout
 GET    /orders
 
 
-## 🎯 User Flow
+##  User Flow
 
 1. User registers or logs in
 2. Browses products
@@ -228,7 +228,7 @@ GET    /orders
 5. Order is stored in database
 6. Admin can manage products and orders
 
-## 🔐 Security Highlights
+##  Security Highlights
 
 - JWT authentication stored in HTTP-only cookies
 - Password hashing (BCrypt or similar)
